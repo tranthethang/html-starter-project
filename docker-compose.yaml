@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  apache:
+    image: httpd:latest
+    container_name: html-starter-project
+    ports:
+      - '8888:80'
+    volumes:
+      - ./:/usr/local/apache2/htdocs
